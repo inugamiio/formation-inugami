@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>/Users/userName/.m2/repository</localRepository>
+  <offline>false</offline>
+  <pluginGroups></pluginGroups>
+  <proxies></proxies>
+  <servers></servers>
+  <mirrors></mirrors>
+
+  <profiles>
+    <profile>
+      <id>inugami</id>
+
+      <properties>
+        <super.inugami.server.home>/Users/userName/dev/inugami/server</super.inugami.server.home>
+        <super.env.dev />
+      </properties>
+      
+      <repositories>
+            <repository>
+                <id>inugami-release</id>
+                <name>inugami-release</name>
+                <url>http://inugami.io/artifactory/inugami-release</url>
+            </repository>
+            <repository>
+                <id>inugami-snapshot</id>
+                <name>inugami-snapshot</name>
+                <url>http://inugami.io/artifactory/inugami-snapshot</url>
+            </repository>
+        </repositories>
+
+        <pluginRepositories>
+            <pluginRepository>
+                <id>inugami-release</id>
+                <name>inugami-release</name>
+                <url>http://inugami.io/artifactory/inugami-release</url>
+            </pluginRepository>
+        </pluginRepositories>
+    </profile>
+  </profiles>
+  
+  <activeProfiles>
+    <activeProfile>inugami</activeProfile>
+  </activeProfiles>
+</settings>
