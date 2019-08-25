@@ -43,3 +43,8 @@ dist-ts
 dependency-reduced-pom.xml
 .vscode/
 *.factorypath
+*.mov
+*.mlt
+*.wav
+sound_data
+*.aup
