@@ -1,0 +1,17 @@
+[
+  {
+    "target": "current",
+    "datapoints": [
+      {"value":28091, "timestamp":1567277040},
+      {"value":14967, "timestamp":1567276980},
+      {"value":22722, "timestamp":1567276920},
+      {"value":31223, "timestamp":1567276860},
+      {"value":26274, "timestamp":1567276800},
+      {"value":19160, "timestamp":1567276740},
+      {"value":22090, "timestamp":1567276680},
+      {"value":11291, "timestamp":1567276620},
+      {"value":30341, "timestamp":1567276560},
+      {"value":29504, "timestamp":1567276500}
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin enable="true">
+    <gav groupId="org.inugami.demo" artifactId="example-plugin" version="1.0.0-SNAPSHOT" />
+
+    <providers> 
+         <provider name="graphite" className="{{mockJsonProvider}}" />
+     </providers>
+
+     <events-files>
+         <events-file name="events-example.xml" />
+     </events-files>
+</plugin>
