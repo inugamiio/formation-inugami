@@ -1,0 +1,22 @@
+{
+	"pluginBaseName" : "example_plugin",
+	"routerModuleName" : "InugamiPluginDashboardDemoRoutes",
+    "module": {
+		"className" : "ExamplePluginModule",
+		"file"      : "js/app/plugins/example_plugin/example.plugin.module.ts"
+    },
+    "menuLinks": [
+		{
+			"path"       : "example/home",
+			"title"      : "Simple Example",
+			"styleClass" : "example-plugin"
+		}
+	],
+    "router": [
+		{
+			"path" 		 : "home",
+			"component"  : "ExampleHomeView"
+		}
+    ],
+    "commonsCss"       : "/css/example_plugin.css"
+}

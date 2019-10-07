@@ -1,0 +1,25 @@
+<h1>Dashboard</h1>
+
+
+<button (click)="toggleMenu()">toggleMenu</button>
+
+<div class="simple-value-style">
+    <label>Hits:</label>
+    <simple-value [pluginName]="pluginName"
+                event="search-hits">
+    </simple-value>
+
+    <div *ngIf="meteo" class="meteo">
+        <div [class]="meteo.current_condition.condition_key">
+            <img [src]="meteo.current_condition.icon_big"/>
+            <span class="temperature" [innerHTML]="meteo.current_condition.tmp"></span>
+            <span class="city" [innerHTML]="meteo.city_info.name"></span>
+            <span class="datetime">
+                <span class="date" [innerHTML]="meteo.current_condition.date"></span>
+                <span class="time" [innerHTML]="meteo.current_condition.hour"></span>
+            </span>
+        </div>
+    </div>
+
+  
+</div>

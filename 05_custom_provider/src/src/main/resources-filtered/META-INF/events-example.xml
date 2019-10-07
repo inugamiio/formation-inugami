@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <simple-event   name="search-hits"
+                    provider="graphite"
+                    scheduler="{{EVERY_MIN}}">
+            <query>mock</query>
+    </simple-event>
+
+    <simple-event   name="meteo"
+                    provider="meteo"
+                    scheduler="{{EVERY_MIN}}">
+            <query>{{baseUrl}}/geneve</query>
+    </simple-event>
+
+</configuration>

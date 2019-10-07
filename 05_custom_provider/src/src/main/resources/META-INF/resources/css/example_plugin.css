@@ -1,0 +1,58 @@
+/** CSS */
+.simple-value-style{
+    font-size: 300%;
+    width: 20%;
+}
+
+.mask{
+    fill:#d4c7ce;
+}
+
+.meteo{
+    height: 8em;
+    width: 8em;
+    border: 0.1em solid #8d8d8d;;
+    background-color: #ffffff; 
+    margin-left: 2em;
+}
+
+.meteo img{
+    height: 4em;
+    width: 4em;
+    display: block;
+    margin: auto;
+}
+.meteo .temperature{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 140%;
+}
+.meteo .temperature::after{
+    content:"°C";
+}
+
+.meteo .city{
+    display: block;
+    font-size: 80%;
+    text-align: center;
+    margin-top: -0.5em;
+    background-color: #ffffff;
+}
+.meteo .datetime{
+    display: block;
+    font-size: 60%;
+    text-align: center;
+}
+
+
+.meteo .date::before{
+    content:"(";
+}
+
+.meteo .time{
+    margin-left: 0.5em; 
+}
+.meteo .time::after{
+    content:")";
+}
